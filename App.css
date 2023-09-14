@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.logo img
+{
+  border-radius: 50%;
+}
+*
+{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hov:hover
+{
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.button
+{
+  background-color: #144272;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.button:hover
+{
+  background-color: white;
+  color: #144272;
+  border: 2px solid #144272;
+}
+
+
+.dropdown {
+ 
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  /* text-align: center; */
+  text-decoration: none;
+  z-index: 1;
+  transform: perspective(1000px);
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  text-align: center;
+  top: 50px;
+  visibility: hidden;
+  z-index: -99999;
+}
+
+/* .dropdown-menu li:first-child {
+  cursor: default;
+} */
+
+.dropdown-menu a {
+  color:#2C74B3;
+  display: inline-block;
+  
+  padding: 10px;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dropdown-menu a:hover {
+  width: fit-content;
+  background: #2C74B3;
+  color: #fbfdff;
+  border-radius: 20px;
+ 
+}
+
+.dropdown:hover .dropdown-menu {
+  background: #f1f1f1;
+  opacity: 1;
+  visibility: visible;
+  /* top: 100%; */
+  top: 20px;
+  width: 100%;
+  -webkit-transition: all .5s, background, 2s .5s linear;
+  transition: all .5s, background 2s .5s linear;
+}
